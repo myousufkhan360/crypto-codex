@@ -1,0 +1,281 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Motor - Renewal | Takaful Pakistan Limited</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/select2.min.css" rel="stylesheet" />
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <!-- Scroll Bottom -->
+      <div id="bottomscroll">
+         <a href="#">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Scroll Bottom -->
+      <!-- Policy Convert Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#ConvertModal" name="history" id="btn-history">
+         History 
+         <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="ConvertModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Policy Has Been Converted</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Policy Convert Modal End -->
+      <!-- Policy Renew Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#RenewModal" name="history" id="btn-history">
+         History 
+         <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="RenewModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Policy Has Been Renew</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Policy Renew Modal End -->
+      <!-- Header Start -->
+      <div id="st-container" class="st-container">
+         <div class="st-pusher">
+            <nav class="st-menu st-effect-14 menu" id="menu-14">
+               <h2 class="icon icon-stack">Menu</h2>
+               <ul class="list-unstyled">
+                  <li>
+                     <a class="icon icon-data" href="#" id="MotorProductSetupLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Product Setup
+                     </a>
+                  </li>
+                  
+                  <li>
+                     <a class="icon icon-study" href="#" id="OpPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Open Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-photo" href="#" id="MotorPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="CertificateLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Certificate
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="EndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="nfEndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Non Financial Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="RenewalLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Renewal
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+            <header class="container-fluid">
+               <div class="header-section">
+                  <div class="row">
+                     <figure class="col-md-4">
+                        <img src="images/logo.png" alt="Takaful Pakistan Limited | LOGO" width="180">
+                     </figure>
+                     <div class="col-md-8 d-flex justify-content-md-end justify-content-center">
+                        <div class="logout-username">
+                           <span id="username"></span>
+                           <a href="javascript:;" id="logout">
+                           <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
+                           </a>
+                           <div id="st-trigger-effects" class="column">
+                              <button data-effect="st-effect-14">
+                              <i class="fa fa-bars" aria-hidden="true"></i>Menu
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <section class="container-fluid" id="top">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="form-sec">
+                        <form role="form" action="" method="post" class="csr-form">
+                           <div class="description">
+                              <h3>Renewal</h3>
+                           </div>
+                           <div class="form-row">
+                              <div class="col-sm-6">
+                                 <label for="txtStartDate" class="col-12">
+                                 <span class="required">
+                                    <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                 </span>Start Date:
+                                 </label>
+                                 <input id="txtStartDate" type="date" class="form-control" name="txtStartDate"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="txtEndDate" class="col-12">
+                                    <span class="required">
+                                       <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                    </span>End Date:
+                                 </label>
+                                 <input id="txtEndDate" type="date" class="form-control" name="txtEndDate"/>
+                              </div>
+                              <div class="submit-btn col-md-3">
+                                 <button type="button" class="btn btn-submit" id="BtnRenewable">Renewable
+                                 <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                                 </button>
+                              </div>
+                              <div class="col-sm-3">
+                                 <button type="button" id="BtnAlreadyRenewal">Already Renewed
+                                 <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                                 </button>
+                              </div>
+                              <div class="col-sm-3">
+                                 <button type="button" id="BtnRenewalAll">Renew All
+                                 <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                                 </button>
+                              </div>
+                              <div class="form-row" id="depericatesec">
+                                 <div class="dep">
+                                    <h1 id="depericiate-heading">Depreciate</h1>
+                                 </div>
+                                 <div class='col-sm-6'>
+                                    <label for='TxnSysId' class='col-12'>Txn Sys Id:</label>
+                                    <input type='text' id='TxnSysId' class='form-control' name='TxnSysId'>
+                                 </div>
+                                 <div class='col-sm-6'>
+                                    <label for='txtdepreciatevalue' class='col-12'>Depreciate Value:</label>
+                                    <input type='text' id='txtdepreciatevalue' class='form-control' name='txtdepreciatevalue'>
+                                 </div>
+                                 <div class='col-sm-6'>
+                                    <label for='txtdepreciaterate' class='col-12'>
+                                       <span class='required'><i class='fa fa-asterisk' aria-hidden='true'></i></span>
+                                       Rate:
+                                    </label> 
+                                    <input type='text' id='txtdepreciaterate' class='form-control' name='txtdepreciaterate'>
+                                 </div>
+                                 <div class='col-sm-6'>
+                                    <label for='txtdepreciateamount' class='col-12'>
+                                       Amount:
+                                    </label> 
+                                    <input type='text' id='txtdepreciateamount' class='form-control' name='txtdepreciateamount'>
+                                 </div>
+                                 <div class='col-sm-3'>
+                                    <button type='button' id='BtndepreciateSave' class='btnsearch'>
+                                       Depreciate
+                                       <i class='fa fa-floppy-o' aria-hidden='true'></i>
+                                    </button>
+                                 </div>
+                                 <div class='col-sm-3'>
+                                    <button type='button' id='BtndepreciateNew' class='btnsearch'>
+                                       New
+                                       <i class='fa fa-plus' aria-hidden='true'></i>
+                                    </button>
+                                 </div>
+                                 <div class='col-sm-3' id="OnlyForRenew">
+                                    <button type='button' id='BtndepreciatePolicy' class='btnsearch'>
+                                       Convert to Policy
+                                       <i class='fa fa-floppy-o' aria-hidden='true'></i>
+                                    </button>
+                                 </div>
+                                 <div class='col-sm-3'>
+                                    <button type='button' id='BtndepreciateRenewOne' class='btnsearch'>
+                                       Renew
+                                       <i class='fa fa-floppy-o' aria-hidden='true'></i>
+                                    </button>
+                                 </div>
+                                 <div class='table-sec col-12 table-responsive'>
+                                    <table class='table table-hover table-bordered' id='ContributionTbl'>
+                                       <thead>
+                                          <tr>
+                                             <th scope='col'>Gross</th>
+                                             <th scope='col'>FIF</th>
+                                             <th scope='col'>FED</th>
+                                             <th scope='col'>Net</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody></tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                              <div class="table-sec col-12 table-responsive">
+                                 <table class="table table-hover table-bordered" id="TblRenewal">
+                                    <thead>
+                                       <tr>
+                                          <th scope="col">Txn Sys Id</th>
+                                          <th scope="col">Document No</th>
+                                          <th scope="col">Partcipant name</th>
+                                          <th scope="col">Partcipant value</th>
+                                          <th scope="col">Takaful Type</th>
+                                          <th scope="col">Issue Date</th>
+                                          <th scope="col">Period From</th>
+                                          <th scope="col">Period To</th>
+                                          <th scope="col">Action</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <!-- Header End -->
+      <!-- Scroll Top -->
+      <div id="topscroll">
+         <a href="#">
+         <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Scroll Top -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Scroll Up & Down -->
+      <script type="text/javascript" src="js/scrollbttn.js"></script>
+      <!-- Form Validation Plugin Js -->
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- Bootstrap Js -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Select2 Dropdown Js -->
+      <script type="text/javascript" src="js/select2.min.js"></script>
+      <!-- DataTable Js -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+
+      <!-- Api Intergration in Select/Table and for edit in family section table  -->
+      <script type="text/javascript" src="js/renewal.js"></script>  
+       <!-- Menu Js -->
+      <script type="text/javascript" src="js/menu.js"></script>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/classie.js"></script>
+      <script type="text/javascript" src="js/sidebarEffects.js"></script>
+   </body>
+</html>

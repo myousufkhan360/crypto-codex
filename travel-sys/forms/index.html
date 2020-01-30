@@ -1,0 +1,330 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Pakistan’s Largest Insurance Website | Takaful Pakistan Limited</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/select2.min.css" rel="stylesheet" />
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div id="bottomscroll">
+         <a href="#">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Header Start -->
+      <header class="container">
+         <div class="row">
+            <div class="col-12">
+               <figure>
+                  <a href="index.html"><img src="images/logo.png" alt="Takaful Pakistan Limited | LOGO" width="180" ></a>
+               </figure>
+            </div>
+         </div>
+      </header>
+      <!-- Header Logo -->
+      <!-- Section Start -->
+      <section class="container" id="top">
+         <div class="row">
+            <div class="col-12">
+               <div class="form-sec">
+                  <div class="col-sm-12  form-box">
+                     <form role="form" action="" method="post" class="f1" novalidate>
+                        <div class="description">
+                           <h3>Travel Insurane Portal</h3>
+                           <p>Fill in the form to get instant access</p>
+                        </div>
+                        <div class="f1-steps">
+                           <div class="f1-progress">
+                              <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
+                           </div>
+                           <div class="f1-step active">
+                              <div class="f1-step-icon">1</div>
+                              <p>Plan</p>
+                           </div>
+                           <div class="f1-step">
+                              <div class="f1-step-icon">2</div>
+                              <p>Personal</p>
+                           </div>
+                           <div class="f1-step">
+                              <div class="f1-step-icon">3</div>
+                              <p>Payment</p>
+                           </div>
+                        </div>
+                        <fieldset>
+                           <div class="form-row">
+                              <div class="col-sm-6 active">
+                                 <label for="category" class="col-12"><span class="required">*</span>Category:</label>
+                                 <select id="Category-dropdown" name="category" class="js-example-basic-single col-12">
+                                 </select>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-country" class="col-12"><span class="required">*</span>Plan:</label>
+                                 <select id="Plan-Dropdown" name="plan" class="js-example-basic-single col-12">
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="table-heading">
+                                    <h2>Cover Limit:</h2>
+                                 </div>
+                                 <div class="table-responsive">
+                                    <table class="table custom-table display" id="coverlimittable">
+                                       <thead class="thead-dark">
+                                          <tr>
+                                             <th>Cover</th>
+                                             <th>Cover Limit</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="table-heading">
+                                    <h2>Contribution:</h2>
+                                 </div>
+                                 <div class="table-responsive">
+                                    <table class="table custom-table" id="contributiotable">
+                                       <thead class="thead-dark">
+                                          <tr>
+                                             <th scope="col">Coverage Type</th>
+                                             <th scope="col">Tenure</th>
+                                             <th scope="col">Contribution</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="f1-buttons">
+                              <button type="button" class="btn btn-next" id="dummybttn">Next</button>
+                           </div>
+                        </fieldset>
+                        <fieldset>
+                           <div class="form-row">
+                              <div class="col-sm-6 active">
+                                 <label for="name" class="col-12"><span class="required">*</span>Name:</label>
+                                 <input type="text" class="form-control" name="name"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="dob" class="col-12"><span class="required">*</span>DOB:</label>
+                                 <input type="date" class="form-control" name="dateofbirth" />
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="email" class="col-12">Email:</label>
+                                 <input type="email" class="form-control" name="email" />
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="num" class="col-12"><span class="required">*</span>Mobile Number:</label>
+                                 <input type="number" class="form-control" name="num" id="phonenumber" value="03" class="phone"/>
+                                 <span id="error" style="display:none">Only 11 numbers are allowed</span>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="destination" class="col-12"><span class="required">*</span>Destination:</label>
+                                 <select  name="destination" class="js-example-basic-single col-12">
+                                    <option value="">Select Destination</option>
+                                    <option value="1">America</option>
+                                    <option value="2">India</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="tenure" class="col-12"><span class="required">*</span>Tenure:</label>
+                                 <select  name="tenure" class="js-example-basic-single col-12">
+                                    <option value="">Select Tenure</option>
+                                    <option value="1">Upto 14 Days</option>
+                                    <option value="2">Upto 15 Days</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="travellingdate" class="col-12"><span class="required">*</span>Travelling Date:</label>
+                                 <input type="date" class="form-control" name="travellingdate" />
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="travellingwith" class="col-12"><span class="required">*</span>Travelling With:</label>
+                                 <select  name="travellingwith" class="js-example-basic-single col-12" id="relation">
+                                    <option value="">Select Travelling with</option>
+                                    <option value="Individual">Individual</option>
+                                    <option value="family">Family</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="form-row" id="familydetails" style="display:none">
+                              <div class="description col-12">
+                                 <h3>Family Details</h3>
+                              </div>
+                              <div class="col-sm-6 active">
+                                 <label for="select-name" class="col-12"><span class="required">*</span>Name:</label>
+                                 <input type="text" class="form-control"  name="fname" id="fname" />
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-dob" class="col-12"><span class="required">*</span>DOB:</label>
+                                 <input type="date" class="form-control" name="familydateofbirth" id="dob" />
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="relationship" class="col-12"><span class="required">*</span>Relationship:</label>
+                                 <select  name="relationship" class="js-example-basic-single col-12" id="relationdropdown">
+                                    <option value="">Select Relationship</option>
+                                    <option value="1">Spouse</option>
+                                    <option value="2">Son</option>
+                                 </select>
+                              </div>
+                              <div class="family-table col-12">
+                                 <table class="table table-hover table-bordered" id="relationtable">
+                                    <thead>
+                                       <tr>
+                                          <th scope="col">Name</th>
+                                          <th scope="col">DOB</th>
+                                          <th scope="col">Relationship</th>
+                                          <th scope="col">Actions</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Mark</td>
+                                          <td>2019-02-03</td>
+                                          <td>son</td>
+                                          <td class="d-none">2</td>
+                                          <td>
+                                             <i class="fa fa-window-close" aria-hidden="true" onclick="deleteRow(this)"></i>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>ramsha</td>
+                                          <td>2017-02-03</td>
+                                          <td>spouse</td>
+                                          <td class="d-none">1</td>
+                                          <td>
+                                             <i class="fa fa-window-close" aria-hidden="true" onclick="deleteRow(this)"></i>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="f1-buttons">
+                              <button type="button" class="btn btn-previous">Previous</button>
+                              <button type="button" class="btn btn-next">Next</button>
+                           </div>
+                        </fieldset>
+                        <fieldset>
+                           <div class="form-row">
+                              <div class="col-sm-12">
+                                 <label for="relationship" class="col-12"><span class="required">*</span>Mode of Payment</label>
+                                 <select  name="method" class="js-example-basic-single col-12" id="paymentmethod">
+                                    <option value="">Select Paymeont Method</option>
+                                    <option value="credit">Credit Card</option>
+                                    <option value="debit">Debit Card</option>
+                                    <option value="cash">Cash</option>
+                                    <option value="cheque">Cheque</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="form-row" id="card" style="display:none">
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12"><span class="required">*</span>Card No:</label>
+                                 <input type="text" class="form-control" name="card"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12">
+                                 <span class="required">*</span>Bank Name:</label>
+                                 <input type="text" class="form-control"  name="bankname"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-dob" class="col-12"><span class="required">*</span>Payment Date:</label>
+                                 <input type="date" class="form-control" name="paymentdate" id="dob" />
+                              </div>
+                              <div class="col-sm-6 textbox">
+                                 <label for="comment">Comment:</label>
+                                 <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+                              </div>
+                           </div>
+                           <div class="form-row" id="debit" style="display:none">
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12"><span class="required">*</span>Card No:</label>
+                                 <input type="text" class="form-control" name="card"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12">
+                                 <span class="required">*</span>Bank Name:</label>
+                                 <input type="text" class="form-control"  name="bankname"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-dob" class="col-12"><span class="required">*</span>Payment Date:</label>
+                                 <input type="date" class="form-control" name="paymentdate" id="dob" />
+                              </div>
+                              <div class="col-sm-6 textbox">
+                                 <label for="comment">Comment:</label>
+                                 <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+                              </div>
+                           </div>
+                           <div class="form-row" id="cheque" style="display:none">
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12"><span class="required">*</span>Cheque #:</label>
+                                 <input type="text" class="form-control"  name="chequeno"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12">
+                                 <span class="required">*</span>Bank Name:</label>
+                                 <input type="text" class="form-control"  name="chequebankname"/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-date" class="col-12"><span class="required">*</span>Payment Date:</label>
+                                 <input type="date" class="form-control" name="chequepaymentdate" id="dob" />
+                              </div>
+                              <div class="col-sm-6 textbox">
+                                 <label for="comment">Comment:</label>
+                                 <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                           </div>
+                           <div class="form-row" id="cash" style="display:none">
+                              <div class="col-sm-6">
+                                 <label for="select-dob" class="col-12"><span class="required">*</span>Payment Date:</label>
+                                 <input type="date" class="form-control" name="cashpaymentdate" id="dob" />
+                              </div>
+                              <div class="col-sm-6 textbox">
+                                 <label for="comment">Comment:</label>
+                                 <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                           </div>
+                           <div class="f1-buttons">
+                              <button type="button" class="btn btn-previous">Previous</button>
+                              <button type="submit" class="btn btn-submit">Submit</button>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section End -->
+      <div id="topscroll">
+         <a href="#">
+         <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </a>
+      </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Scroll Up & Down -->
+      <script type="text/javascript" src="js/scrollbttn.js"></script>
+      <!-- Form Validation Plugin Js -->
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- Bootstrap Js -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- <script src="js/retina-1.1.0.min.js"></script> -->
+      <!-- Select2 Dropdown Js -->
+      <script type="text/javascript" src="js/select2.min.js"></script>
+      <!-- DataTable Js -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+      <!-- Api Intergration in Select/Table and for edit in family section table  -->
+      <script type="text/javascript" src="js/api-select&table.js"></script>
+      <!-- Custom Validation on next click Js -->
+      <script type="text/javascript" src="js/scripts.js"></script> 
+   </body>
+</html>

@@ -1,0 +1,371 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Motor | Takaful Pakistan Limited</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/select2.min.css" rel="stylesheet" />
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div id="bottomscroll">
+         <a href="#">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Header Start -->
+      <div class="page-start">
+         <header class="container-fluid">
+            <div class="header-section">
+               <div class="row">
+                  <figure class="col-md-4">
+                     <img src="images/logo.png" alt="Takaful Pakistan Limited | LOGO" width="180">
+                  </figure>
+                  <div class="col-md-8 d-flex justify-content-md-end justify-content-center">
+                     <div class="logout-username">
+                        <span id="username"></span>
+                        <a href="javascript:;" id="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <section class="container-fluid" id="top">
+            <div class="row">
+               <div class="col-12">
+                  <div class="form-sec">
+                     <form role="form" action="" method="post" class="csr-form">
+                        <div class="description">
+                           <h3>Takaful Motor Portal</h3>
+                        </div>
+                        <div id="accordion" class="accordion">
+                           <div class="card mb-0">
+                              <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                 <a class="card-title">
+                                 Item 1
+                                 </a>
+                              </div>
+                              <div id="collapseOne" class="card-body collapse show" data-parent="#accordion" >
+                                 <div class="form-row">
+                                    <div class="col-sm-6" style="display:none;">
+                                       <input type="text" id="RowIndex" class="disable-input">
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtTxnSysDate" class="col-12"><span class="required">*</span>Txn Sys Date:</label>
+                                       <input type="text" class="form-control" name="txtTxnSysDate" id="txtTxnSysDate"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtTxnSysID" class="col-12"><span class="required">*</span>Txn Sys ID:</label>
+                                       <input type="text" class="form-control" name="txtTxnSysID" id="txtTxnSysID"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtUserCode" class="col-12"><span class="required">*</span>User Code:</label>
+                                       <input type="text" class="form-control" name="txtUserCode" id="txtUserCode" required="required"/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlPolicyTypeCode" class="col-12"><span class="required">*</span>Policy Type:</label>
+                                       <select id="ddlPolicyTypeCode" name="ddlPolicyTypeCode" class="js-example-basic-single col-12" required="required">
+                                          <option>etc</option>
+                                          <option>open</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlCertificateTypeCode" class="col-12"><span class="required">*</span>Certificate Type:</label>
+                                       <select id="ddlCertificateTypeCode" name="ddlCertificateTypeCode" class="js-example-basic-single col-12" required="required">
+                                          <option>etc</option>
+                                          <option>certificate</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlClientCode" class="col-12"><span class="required">*</span>Client:</label>
+                                       <select id="ddlClientCode" name="ddlClientCode" class="js-example-basic-single col-12" required="required">
+                                          <option>etc</option>
+                                          <option>ahmer</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlAgencyCode" class="col-12"><span class="required">*</span>Agency:</label>
+                                       <select id="ddlAgencyCode" name="ddlAgencyCode" class="js-example-basic-single col-12" required="required">
+                                          <option>etc</option>
+                                          <option>software house</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="txtPolicyPeriodFrom" class="col-12"><span class="required">*</span>Policy Period From:</label>
+                                       <input type="date" class="form-control" name="txtPolicyPeriodFrom" id="txtPolicyPeriodFrom" required="required">
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="txtPolicyPeriodFrom" class="col-12"><span class="required">*</span>Policy Period To:</label>
+                                       <input type="date" class="form-control" name="txtPolicyPeriodTo" id="txtPolicyPeriodTo" required="required">
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlConditionCode" class="col-12"><span class="required">*</span>Conditions:</label>
+                                       <select id="ddlConditionCode" name="ddlConditionCode" class="js-example-basic-single col-12" required="required">
+                                          <option>etc</option>
+                                          <option>Dummy</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlWarrantyCode" class="col-12"><span class="required">*</span>Warranties:</label>
+                                       <select id="ddlWarrantyCode" name="ddlWarrantyCode" class="js-example-basic-single col-12" required="required">
+                                          <option>etc</option>
+                                          <option>Testing</option>
+                                       </select>
+                                    </div>
+                                    <div class="submit-btn col-md-3">
+                                       <button type="submit" class="btn btn-submit" id="submit-bttn">Save<i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-md-3 history-modal">
+                                       <!-- Button to Open the Modal -->
+                                       <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#myModal" name="history" id="btn-history">
+                                       History <i class="fa fa-history" aria-hidden="true"></i>
+                                       </button>
+                                       <!-- The Modal -->
+                                       <div class="modal bd-example-modal-lg fade" id="myModal">
+                                          <div class="modal-dialog modal-lg">
+                                             <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                   <h4 class="modal-title">History</h4>
+                                                   <button type="button" class="close" data-dismiss="modal" id="close">&times;</button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body table-responsive">
+                                                   <table class="table table-hover table-bordered" id="tblMotorOpenPolicy">
+                                                      <thead>
+                                                         <tr>
+                                                            <th scope="col">User Code</th>
+                                                            <th scope="col">Policy Type</th>
+                                                            <th scope="col">Certificate Type</th>
+                                                            <th scope="col">Client</th>
+                                                            <th scope="col">Agency</th>
+                                                            <th scope="col">Policy Period Form</th>
+                                                            <th scope="col">Policy Period To</th>
+                                                            <th scope="col">Conditions</th>
+                                                            <th scope="col">Warrnaties</th>
+                                                         </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                         <tr>
+                                                            <td scope="col">1</td>
+                                                            <td scope="col">open</td>
+                                                            <td scope="col">certificate</td>
+                                                            <td scope="col">ahmer</td>
+                                                            <td scope="col">software house</td>
+                                                            <td scope="col">2019-01-29</td>
+                                                            <td scope="col">2019-01-29</td>
+                                                            <td scope="col">Dummy</td>
+                                                            <td scope="col">Testing</td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                 <a class="card-title">
+                                 Item 2
+                                 </a>
+                              </div>
+                              <div id="collapseTwo" class="card-body collapse" data-parent="#accordion" >
+                                 <div class="form-row">
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtPolTxnSysID" class="col-12">Pol Txn Sys ID:</label>
+                                       <input type="text" class="form-control" name="txtPolTxnSysID" id="txtPolTxnSysID"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtUserCode" class="col-12">User Code:</label>
+                                       <input type="text" class="form-control" name="txtUserCode" id="txtUserCode"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtTxnSysDate" class="col-12">Txn Sys Date:</label>
+                                       <input type="date" class="form-control" name="txtTxnSysDate" id="txtTxnSysDate"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtTxnSysID" class="col-12">Txn Sys ID:</label>
+                                       <input type="text" class="form-control" name="txtTxnSysID" id="txtTxnSysID"/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlRatingFactorCode" class="col-12"><span class="required">*</span>Rating Factor:</label>
+                                       <select id="ddlRatingFactorCode" name="ddlRatingFactorCode" class="js-example-basic-single col-12" required="required">
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlIsEditable" class="col-12"><span class="required">*</span>Is Editable:</label>
+                                       <select id="ddlIsEditable" name="ddlIsEditable" class="js-example-basic-single col-12" required="required">
+                                       </select>
+                                    </div>
+                                    <div class="submit-btn col-md-3">
+                                       <button type="submit" class="btn btn-submit" id="submit-bttn">Save<i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-md-3 history-modal">
+                                       <!-- Button to Open the Modal -->
+                                       <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#myModal" name="history" id="btn-history">
+                                       History <i class="fa fa-history" aria-hidden="true"></i>
+                                       </button>
+                                       <!-- The Modal -->
+                                       <div class="modal fade" id="myModal">
+                                          <div class="modal-dialog modal-lg">
+                                             <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                   <h4 class="modal-title">History</h4>
+                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                   <table class="table table-hover table-bordered" id="statustable">
+                                                      <thead>
+                                                         <tr>
+                                                            <th scope="col">User Id</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Remarks</th>
+                                                         </tr>
+                                                      </thead>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="table-sec col-12 table-responsive">
+                                       <table class="table table-hover table-bordered" id="tblMotorOpenRating">
+                                          <thead>
+                                             <tr>
+                                                <th scope="col">Rating Factor</th>
+                                                <th scope="col">Is Editable</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>Dummy</td>
+                                                <td>Text</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Dummy</td>
+                                                <td>Text</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                 <a class="card-title">
+                                 Item 3
+                                 </a>
+                              </div>
+                              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                 <div class="form-row">
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtPolTxnSysID" class="col-12">Pol Txn Sys ID:</label>
+                                       <input type="text" class="form-control" name="txtPolTxnSysID" id="txtPolTxnSysID"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtUserCode" class="col-12">Use rCode:</label>
+                                       <input type="text" class="form-control" name="txtUserCode" id="txtUserCode"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtTxnSysDate" class="col-12">Txn Sys Date:</label>
+                                       <input type="date" class="form-control" name="txtTxnSysDate" id="txtTxnSysDate"/>
+                                    </div>
+                                    <div class="col-sm-6" style="display:none">
+                                       <label for="txtTxnSysID" class="col-12">Txn Sys ID:</label>
+                                       <input type="text" class="form-control" name="txtTxnSysID" id="txtTxnSysID"/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                       <label for="ddlTrackerCode" class="col-12"><span class="required">*</span>Tracker:</label>
+                                       <select id="ddlTrackerCode" name="ddlTrackerCode" class="js-example-basic-single col-12" required="required">
+                                       </select>
+                                    </div>
+                                    <div class="submit-btn col-md-3">
+                                       <button type="submit" class="btn btn-submit" id="submit-bttn">Save<i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-md-3 history-modal">
+                                       <!-- Button to Open the Modal -->
+                                       <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#myModal" name="history" id="btn-history">
+                                       History <i class="fa fa-history" aria-hidden="true"></i>
+                                       </button>
+                                       <!-- The Modal -->
+                                       <div class="modal fade" id="myModal">
+                                          <div class="modal-dialog modal-lg">
+                                             <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                   <h4 class="modal-title">History</h4>
+                                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                   <table class="table table-hover table-bordered" id="statustable">
+                                                      <thead>
+                                                         <tr>
+                                                            <th scope="col">User Id</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Remarks</th>
+                                                         </tr>
+                                                      </thead>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="table-sec col-12 table-responsive">
+                                       <table class="table table-hover table-bordered" id="TblMotorOpenTracker">
+                                          <thead>
+                                             <tr>
+                                                <th scope="col">Tracker:</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>Dummy</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Dummy</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Header End -->
+      <div id="topscroll">
+         <a href="#">
+         <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </a>
+      </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Scroll Up & Down -->
+      <script type="text/javascript" src="js/scrollbttn.js"></script>
+      <!-- Form Validation Plugin Js -->
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- Bootstrap Js -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- <script src="js/retina-1.1.0.min.js"></script> -->
+      <!-- Select2 Dropdown Js -->
+      <script type="text/javascript" src="js/select2.min.js"></script>
+      <!-- DataTable Js -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+      <!-- Api Intergration in Select/Table and for edit in family section table  -->
+      <script type="text/javascript" src="js/api-select&table.js"></script>  
+      <script>
+      </script>
+   </body>
+</html>

@@ -1,0 +1,206 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Master Source | Takaful Pakistan Limited</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/select2.min.css" rel="stylesheet" />
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div id="bottomscroll">
+         <a href="#">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Page Start -->
+      <div id="st-container" class="st-container">
+         <div class="st-pusher">
+            <nav class="st-menu st-effect-14 menu" id="menu-14">
+               <h2 class="icon icon-stack">Menu</h2>
+               <ul class="list-unstyled">
+                  <li>
+                     <a class="icon icon-data" href="#" id="MotorProductSetupLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Product Setup
+                     </a>
+                  </li>
+                  
+                  <li>
+                     <a class="icon icon-study" href="#" id="OpPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Open Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-photo" href="#" id="MotorPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="CertificateLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Certificate
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="EndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="nfEndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Non Financial Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="RenewalLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Renewal
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+            <header class="container-fluid">
+               <div class="header-section">
+                  <div class="row">
+                     <figure class="col-md-4">
+                        <img src="images/logo.png" alt="Takaful Pakistan Limited | LOGO" width="180">
+                     </figure>
+                     <div class="col-md-8 d-flex justify-content-md-end justify-content-center">
+                        <div class="logout-username">
+                           <span id="username"></span>
+                           <a href="javascript:;" id="logout">
+                           <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
+                           </a>
+                           <div id="st-trigger-effects" class="column">
+                              <button data-effect="st-effect-14">
+                              <i class="fa fa-bars" aria-hidden="true"></i>Menu
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <section class="container-fluid" id="top">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="form-sec">
+                        <form role="form" action="" method="post" class="csr-form">
+                           <div class="description">
+                              <h3>Takaful Master Source</h3>
+                           </div>
+                           <div class="form-row">
+                              <div class="col-sm-12 sec-heading">
+                                 <h1>Master Section</h1>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="txtPolicyPeriodFrom" class="col-12"><span class="required">*</span>MasterCode:</label>
+                                 <input type="text" class="form-control  disable" name="txtUserId" id="txtUserId" disabled>
+                              </div>
+                              <div class="col-sm-6" style="display:none;">
+                                 <input type="text" id="MasterRowsIndex" class="disable-input">
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="select-name" class="col-12"><span class="required">*</span>Code:</label>
+                                 <input type="text" class="form-control  disable"  name="txtMasterCodeId" id="txtMasterCodeId" disabled/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="txtCodeDescription" class="col-12"><span class="required">*</span>Code Description:</label>
+                                 <input type="text" class="form-control" name="txtCodeDescription" id="txtCodeDescription" required="required" />
+                              </div>
+                              <div class="col-sm-3 family-btn">
+                                 <button type="submit" id="BtnMasterSave">save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                              </div>
+                              <div class="col-sm-3 family-btn">
+                                 <button type="button" id="BtnMasterNew">new<i class="fa fa-plus" aria-hidden="true"></i></button>
+                              </div>
+                              <div class="table-sec col-12 table-responsive">
+                                 <table class="table table-hover table-bordered" id="TblMasterDescription">
+                                    <thead>
+                                       <tr>
+                                          <th scope="col">Code</th>
+                                          <th scope="col">Code Description</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="form-row" id="DetailSec" style="display:none">
+                              <div class="col-sm-12 sec-heading">
+                                 <h1>Detail Section</h1>
+                              </div>
+                              <div class="col-sm-6" style="display:none;">
+                                 <input type="text" id="DetailRowIndex" class="disable-input">
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="txtDetailCodeId" class="col-12"><span class="required">*</span>Code:</label>
+                                 <input type="text" class="form-control  disable"  name="txtDetailCodeId" id="txtDetailCodeId" disabled/>
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="txtDetailCodeDescription" class="col-12"><span class="required">*</span>Code Description:</label>
+                                 <input type="text" class="form-control" name="txtDetailCodeDescription" id="txtDetailCodeDescription" required="required" />
+                              </div>
+                              <div class="col-sm-6">
+                                 <label for="txtRefrence" class="col-12"><span class="required">*</span>Refrence:</label>
+                                 <input type="text" class="form-control" name="txtRefrence" id="txtRefrence" required="required" >
+                              </div>
+                              <div class="col-sm-6" style="display:none">
+                                 <label for="txtTxnSysId" class="col-12"><span class="required">*</span>txtTxnSysId:</label>
+                                 <input type="text" class="form-control" name="txtTxnSysId" id="txtTxnSysId">
+                              </div>
+                              <div class="col-sm-3 family-btn">
+                                 <button type="submit" id="BtnDetailSave">save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                              </div>
+                              <div class="col-sm-3 family-btn">
+                                 <button type="button" id="BtnDetailNew">new<i class="fa fa-plus" aria-hidden="true"></i></button>
+                              </div>
+                              <div class="table-sec col-12 table-responsive">
+                                 <table class="table table-hover table-bordered" id="TblDetailDescription">
+                                    <thead>
+                                       <tr>
+                                          <th scope="col">Code</th>
+                                          <th scope="col">Code Description</th>
+                                          <th scope="col">Refrence</th>
+                                          <th scope="col">Sys Id</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <!-- Page End -->
+      <div id="topscroll">
+         <a href="#">
+         <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </a>
+      </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Scroll Up & Down -->
+      <script type="text/javascript" src="js/scrollbttn.js"></script>
+      <!-- Form Validation Plugin Js -->
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- Bootstrap Js -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Select2 Dropdown Js -->
+      <script type="text/javascript" src="js/select2.min.js"></script>
+      <!-- DataTable Js -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+      <!-- Api Intergration in Select/Table and for edit in family section table  -->
+      <script type="text/javascript" src="js/api-select&table.js"></script>  
+      <!-- Menu Js -->
+      <script type="text/javascript" src="js/menu.js"></script>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/classie.js"></script>
+      <script type="text/javascript" src="js/sidebarEffects.js"></script>
+   </body>
+</html>

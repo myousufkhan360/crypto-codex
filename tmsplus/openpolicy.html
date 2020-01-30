@@ -1,0 +1,422 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Motor - Open Policy | Takaful Pakistan Limited</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/select2.min.css" rel="stylesheet" />
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#ErrorModal" name="history" id="btn-history">
+         History <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="ErrorModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body" id="ModalError">
+                     <!-- <span id="ModalError"></span> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+<!-- Form Submit Validation Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#ErrorModalValidate" name="history" id="btn-history">
+         Eroor <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="ErrorModalValidate">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1 id="test"></h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Validation Modal Start -->
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#SubmitModal" name="history" id="btn-history">
+         History <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="SubmitModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Record has been Submitted</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#PostedModal" name="history" id="btn-history">
+         History <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="PostedModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Record has been Posted</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#UpdatedModal" name="history" id="btn-history">
+         History <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="UpdatedModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Record has been Updated</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+      <!-- Scroll Bottom -->
+      <div id="bottomscroll">
+         <a href="#">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Scroll Bottom -->
+      <!-- Header Start -->
+      <div id="st-container" class="st-container">
+         <div class="st-pusher">
+            <nav class="st-menu st-effect-14 menu" id="menu-14">
+               <h2 class="icon icon-stack">Menu</h2>
+               <ul class="list-unstyled">
+                  <li>
+                     <a class="icon icon-data" href="#" id="MotorProductSetupLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Product Setup
+                     </a>
+                  </li>
+                  
+                  <li>
+                     <a class="icon icon-study" href="#" id="OpPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Open Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-photo" href="#" id="MotorPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="CertificateLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Certificate
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="EndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="nfEndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Non Financial Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="RenewalLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Renewal
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+            <header class="container-fluid">
+               <div class="header-section">
+                  <div class="row">
+                     <figure class="col-md-4">
+                        <img src="images/logo.png" alt="Takaful Pakistan Limited | LOGO" width="180">
+                     </figure>
+                     <div class="col-md-8 d-flex justify-content-md-end justify-content-center">
+                        <div class="logout-username">
+                           <span id="username"></span>
+                           <a href="javascript:;" id="logout">
+                           <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
+                           </a>
+                           <div id="st-trigger-effects" class="column">
+                              <button data-effect="st-effect-14">
+                              <i class="fa fa-bars" aria-hidden="true"></i>Menu
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <section class="container-fluid" id="top">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="form-sec">
+                        <form role="form" action="" method="post" class="csr-form">
+                           <div class="description">
+                              <h3>Open Policy</h3>
+                           </div>
+                           <div class="form-row">
+                              <div class="col-sm-12" style="display:none">
+                                 <input type="text" id="OpenPolicyRowIndex" class="disable-input">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtPostedBy" class="col-12">Posted By:
+                                 </label>
+                                 <input type="text" id="txtPostedBy" class="form-control disable"  name="txtPostedBy" readonly="readonly">
+                              </div>
+                              <div class="col-sm-4 n">
+                                 <label for="txtCreatedBy" class="col-12">Created By:</label>
+                                 <input type="text" id="txtCreatedBy" class="form-control disable"  name="txtCreatedBy" readonly="readonly">
+                              </div>
+                              <div class="col-sm-4" style="display:none">
+                                 <label for="txtDocValue" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Doc Value:</label>
+                                 <input type="text" id="txtDocValue" class="form-control disable"  name="txtDocValue">
+                              </div>
+                              <div class="col-sm-4" style="display:none">
+                                 <label for="txtDocText" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Doc Text:</label>
+                                 <input type="text" id="txtDocText" class="form-control disable"  name="txtDocText">
+                              </div>
+                              <div class="col-sm-4" style="display:none">
+                                 <label for="txtTxnSysID" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Txn Sys ID:</label>
+                                 <input type="text" id="txtTxnSysID" class="form-control"  name="txtTxnSysID">
+                              </div>
+                              <div class="col-sm-4" style="display:none">
+                                 <label for="txtTxnSysDate" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Txn Sys Date:</label>
+                                 <input type="date" id="txtTxnSysDate" class="form-control"  name="txtTxnSysDate">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtPolicyString" class="col-12">Policy String:</label>
+                                 <input type="text" id="txtPolicyString" class="form-control disable" name="txtPolicyString" readonly="readonly">
+                              </div>
+                              <div class="col-sm-4" style="display:none">
+                                 <label for="txtPolicyMonth" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Policy Month:</label>
+                                 <input type="text" id="txtPolicyMonth" class="form-control" name="txtPolicyMonth">
+                              </div>
+                              <div class="col-sm-4" style="display:none">
+                                 <label for="txtPolicyYear" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Policy Year:</label>
+                                 <input type="text" id="txtPolicyYear" class="form-control" name="txtPolicyYear">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtPolicyNo" class="col-12">Policy No:</label>
+                                 <input type="text" id="txtPolicyNo" class="form-control disable" name="txtPolicyNo" readonly="readonly">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtEffectiveDate" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Effective Date:</label>
+                                 <input type="date" id="txtEffectiveDate" class="form-control"  name="txtEffectiveDate">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtExpiryDate" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Expiry Date:</label>
+                                 <input type="date" id="txtExpiryDate" class="form-control"  name="txtExpiryDate">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtGenerateAgainst" class="col-12">Generate Against:</label>
+                                 <input type="text" id="txtGenerateAgainst" class="form-control disable" name="txtGenerateAgainst" readonly="readonly">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="ddlTakafulType" class="col-12"></span>Takaful Type:</label>
+                                 <div class="select">
+                                    <select id="ddlTakafulType" name="ddlTakafulType" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="ddlProductCode" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Product:</label>
+                                 <div class="select">
+                                    <select id="ddlProductCode" name="ddlProductCode" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4 disable">
+                                 <label for="ddlPolicyTypeCode" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Policy Type:</label>
+                                 <div class="select">
+                                    <select id="ddlPolicyTypeCode" name="ddlPolicyTypeCode" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4 disablet">
+                                 <label for="ddlClientCode" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Client:</label>
+                                 <div class="select">
+                                    <select id="ddlClientCode" name="ddlClientCode" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4 disable">
+                                 <label for="ddlAgencyCode" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Agency:</label>
+                                 <div class="select">
+                                    <select id="ddlAgencyCode" name="ddlAgencyCode" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtCommissionRate" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Commission Rate:</label>
+                                 <input type="text" id="txtCommissionRate" class="form-control" name="txtCommissionRate">
+                              </div>
+                              <div class="col-sm-4 disable">
+                                 <label for="ddlCertInsureCode" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Certificate Type Code:</label>
+                                 <div class="select">
+                                    <select id="ddlCertInsureCode" name="ddlCertInsureCode" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtRemarks" class="col-12">Remarks:</label>
+                                 <input type="text" id="txtRemarks" class="form-control" name="txtRemarks">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtBrchCoverNoteNo" class="col-12">Brch Cover Note No:</label>
+                                 <input type="text" id="txtBrchCoverNoteNo" class="form-control" name="txtBrchCoverNoteNo">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtLeaderPolicyNo" class="col-12">Leader Policy No:</label>
+                                 <input type="text" id="txtLeaderPolicyNo" class="form-control" name="txtLeaderPolicyNo">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="txtLeaderEndNo" class="col-12">Leader End No:</label>
+                                 <input type="text" id="txtLeaderEndNo" class="form-control" name="txtLeaderEndNo">
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="ddlIsFiler" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>IsFiler:</label>
+                                 <div class="select">
+                                    <select id="ddlIsFiler" name="ddlIsFiler" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="ddlCalcType" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Calc Type:</label>
+                                 <div class="select">
+                                    <select id="ddlCalcType" name="ddlCalcType" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-sm-4">
+                                 <label for="ddlIsAuto" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Is Auto:</label>
+                                 <div class="select">
+                                    <select id="ddlIsAuto" name="ddlIsAuto" class="js-example-basic-single col-12"> 
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-row">
+                                    <div class="col-sm-3">
+                                       <button id="BtnPolicySave" type="button" class="wow slideInLeft" data-wow-duration="1.1s" >save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-sm-3">
+                                       <button type="button" id="BtnPolicyNew" class="wow bounceInDown" data-wow-duration="1.1s">new<i class="fa fa-plus" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="col-sm-3  wow slideInRight" data-wow-duration="1.1s"">
+                                       <button type="button" id="BtnPostedBy" >Posted<i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                 <div class="table-sec table-responsive">
+                                    <table class="table table-hover table-bordered" id="TblOpenPolicy">
+                                       <thead class="thead-dark">
+                                          <tr>
+                                             <th>Serial No</th>
+                                             <th>Agency Value</th>
+                                             <th>Agency</th>
+                                             <th>Brch Cover Note No</th>
+                                             <th>Calc Type Value</th>
+                                             <th>Calc Type</th>
+                                             <th>Cert Insure Value</th>
+                                             <th>Cert Insure</th>
+                                             <th>Client Value</th>
+                                             <th>Client</th>
+                                             <th>Doc Value</th>
+                                             <th>Doc Type</th>
+                                             <th>Generate Against</th>
+                                             <th>Is Auto Value</th>
+                                             <th>Is Auto</th>
+                                             <th>Is Filer Value</th>
+                                             <th>Is Filer</th>
+                                             <th>Leader End No</th>
+                                             <th>Leader Policy No</th>
+                                             <th>Policy Month</th>
+                                             <th>Policy No</th>
+                                             <th>Policy String</th>
+                                             <th>Policy Type Value</th>
+                                             <th>Policy Type</th>
+                                             <th>Policy Year</th>
+                                             <th>Product Value</th>
+                                             <th>Product</th>
+                                             <th>Remarks</th>
+                                             <th>Txn Sys Date</th>
+                                             <th>Txn Sys ID</th>
+                                             <th>UW Year</th>
+                                             <th>Effective Date</th>
+                                             <th>Expiry Date</th>
+                                             <th>Created By</th>
+                                             <th>Is Posted</th>
+                                             <th>Insurance Type Code</th>
+                                             <th>Insurance Type Name</th>
+                                             <th>Commision Rate</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <!-- Header End -->
+      <!-- Scroll Top -->
+      <div id="topscroll">
+         <a href="#">
+         <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Scroll Top -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Scroll Up & Down -->
+      <script type="text/javascript" src="js/scrollbttn.js"></script>
+      <!-- Form Validation Plugin Js -->
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- Bootstrap Js -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Select2 Dropdown Js -->
+      <script type="text/javascript" src="js/select2.min.js"></script>
+      <!-- DataTable Js -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+      <!-- Api Intergration in Select/Table and for edit in family section table  -->
+      <script type="text/javascript" src="js/openpolicy.js"></script>  
+       <!-- Menu Js -->
+      <script type="text/javascript" src="js/menu.js"></script>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/classie.js"></script>
+      <script type="text/javascript" src="js/sidebarEffects.js"></script>
+   </body>
+</html>

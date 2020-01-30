@@ -1,0 +1,7 @@
+https://www.c-sharpcorner.com/article/uploading-image-to-server-using-web-api-2-0/
+
+
+https://www.c-sharpcorner.com/UploadFile/2b481f/uploading-a-file-in-Asp-Net-web-api/
+
+
+https://www.c-sharpcorner.com/UploadFile/2b481f/upload-files-in-and-download-files-from-database-in-web-api/

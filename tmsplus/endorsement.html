@@ -1,0 +1,762 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Motor - Certificate | Takaful Pakistan Limited</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/select2.min.css" rel="stylesheet" />
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div id="header" style="display:none">
+         <div class="header"></div>
+         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+         <label for="openSidebarMenu" class="sidebarIconToggle">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+         </label>
+         <div id="sidebarMenu">
+          <ul class="sidebarMenuInner">
+            <li id="Certificate"></li>
+          </ul>
+         </div>
+      </div>
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#SubmitModal" name="history" id="btn-history">
+         History 
+         <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="SubmitModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Record has been Submitted</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#ErrorModal" name="history" id="btn-history">
+         History 
+         <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="ErrorModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body" id="ModalError">
+                     <!-- <span id="ModalError"></span> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+      <!-- Form Submit Modal Start -->
+      <div class="col-md-3 Submit-modal">
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#UpdatedModal" name="history" id="btn-history">
+         History 
+         <i class="fa fa-history" aria-hidden="true"></i>
+         </button>
+         <!-- The Modal -->
+         <div class="modal fade" id="UpdatedModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                  <div class="modal-body">
+                     <h1>Your Record has been Updated</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Form Submit Modal End -->
+      <!-- Scroll Bottom -->
+      <div id="bottomscroll">
+         <a href="#">
+         <i class="fa fa-chevron-down" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Scroll Bottom -->
+      <!-- Page Start -->
+      <div id="st-container" class="st-container">
+      <div class="st-pusher">
+         <nav class="st-menu st-effect-14 menu" id="menu-14">
+               <h2 class="icon icon-stack">Menu</h2>
+               <ul class="list-unstyled">
+                  <li>
+                     <a class="icon icon-data" href="#" id="MotorProductSetupLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Product Setup
+                     </a>
+                  </li>
+                  
+                  <li>
+                     <a class="icon icon-study" href="#" id="OpPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Open Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-photo" href="#" id="MotorPolicyLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Motor Policy
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="CertificateLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Certificate
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="EndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="nfEndorsementLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Non Financial Endorsement
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon icon-wallet" href="#" id="RenewalLink">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>Renewal
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         <header class="container-fluid">
+            <div class="header-section">
+               <div class="row">
+                  <figure class="col-md-4">
+                     <img src="images/logo.png" alt="Takaful Pakistan Limited | LOGO" width="180">
+                  </figure>
+                  <div class="col-md-8 d-flex justify-content-md-end justify-content-center">
+                     <div class="logout-username">
+                        <span id="username"></span>
+                        <a href="javascript:;" id="logout">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>Logout
+                        </a>
+                        <div id="st-trigger-effects" class="column">
+                           <button data-effect="st-effect-14">
+                           <i class="fa fa-bars" aria-hidden="true"></i>Menu
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <section class="container-fluid" id="top">
+            <div class="row">
+               <div class="col-12">
+                  <div class="form-sec">
+                     <form role="form" action="" method="post" class="csr-form" id="form">
+                        <div class="description">
+                           <h3>Vehicle Certificate</h3>
+                        </div>
+                        <div class="form-row">
+                           <div class="col-sm-12 sec-heading">
+                              <h1>Policy Header</h1>
+                           </div>
+                           <div class="col-sm-4" style="display:none;">
+                              <input type="text" id="VechicleInsuranceRowIndex" class="disable-input">
+                           </div>
+                           <div class="col-sm-3" style="display:none;">
+                              <label for="txtTxnSysID" class="col-12">TxSysId:</label>
+                              <input type="text" id="txtTxnSysID" class="form-control disable"  name="txtTxnSysID" readonly="readonly">
+                           </div>
+                           <div class="col-sm-3" style="display:none;">
+                              <label for="txtCertificateCreatedBy" class="col-12">Created By:</label>
+                              <input type="text" id="txtCertificateCreatedBy" class="form-control disable"  name="txtCertificateCreatedBy" readonly="readonly">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlCertificateClientCode" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Client:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlCertificateClientCode" name="ddlCertificateClientCode" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlCertificateOpenPolicy" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Open Policy:
+                              </label>
+                              <div class="select">
+                              </div>
+                              <input type="text" id="ddlCertificateOpenPolicy" class="form-control"  name="ddlCertificateOpenPolicy"> 
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtPolicyString" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>PolicyString:
+                              </label>
+                              <input type="text" id="txtPolicyString" class="form-control"  name="txtPolicyString" readonly="readonly"> 
+                           </div>
+                           <div class="col-sm-4 disable">
+                              <label for="ddlAgencyCode" class="col-12"><span class="required"><i class="fa fa-asterisk" aria-hidden="true"></i></span>Agency:</label>
+                              <div class="select">
+                                 <input type="text" id="ddlAgencyCode" class="form-control"  name="ddlAgencyCode" readonly="readonly"> 
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtCommissionRate" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Commission %:
+                              </label>
+                              <input type="text" id="txtCommissionRate" class="form-control"  name="txtCommissionRate">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtCertificateEffectiveDate" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Effective Date:
+                              </label>
+                              <input type="date" id="txtCertificateEffectiveDate" class="form-control"  name="txtCertificateEffectiveDate">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtCerticateExpiryDate" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Expiry Date:
+                              </label>
+                              <input type="date" id="txtCerticateExpiryDate" class="form-control"  name="txtCerticateExpiryDate">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlCertificateProductCode" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Product:
+                              </label>
+                              <div class="select">
+                                 <input type="text" id="ddlCertificateProductCode" class="form-control"  name="ddlCertificateProductCode">
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlCertificatePolicyTypeCode" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Policy Type:
+                              </label>
+                              <div class="select">
+                                 <input type="text" id="ddlCertificatePolicyTypeCode" class="form-control"  name="ddlCertificatePolicyTypeCode">
+                              </div>
+                           </div>
+                           <div class="col-md-4 history-modal">
+                              <!-- Button to Open the Modal -->
+                              <button type="button" class="btn btn-primary open" data-toggle="modal" data-target="#Endorsementmodel" name="history" id="Endorsement">
+                              Search Endorsement 
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                              </button>
+                              <!-- The Modal -->
+                              <div class="modal fade" id="Endorsementmodel">
+                                 <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                       <!-- Modal Header -->
+                                       <div class="modal-header">
+                                          <h4 class="modal-title">Endorsement</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                       </div>
+                                       <!-- Modal body -->
+                                       <div class="modal-body">
+                                          <div class="form-row">
+                                             <div class="col-sm-6">
+                                                <label for="ddlEndorsementSearchByCert" class="col-12">
+                                                <span class="required">
+                                                <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                </span>Search By:
+                                                </label>
+                                                <div class="select">
+                                                   <select id="ddlEndorsementSearchByCert" name="ddlEndorsementSearchByCert" class="js-example-basic-single col-12"></select>
+                                                </div>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <label for="txtEndorsementSearchCertInfo" class="col-12">
+                                                <span class="required">
+                                                <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                </span>Search Text:
+                                                </label>
+                                                <input type="text" id="txtEndorsementSearchCertInfo" class="form-control"  name="txtEndorsementSearchCertInfo">
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <button type="button" id="BtnEndorsementSearch" class="btnsearch">Search
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                                </button>
+                                             </div>
+                                             <div class="col-sm-6">
+                                                <button type="button" id="BtnEndorsementSearchNew" class="btnsearch">New
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                             </div>
+                                             
+                                             <div class="table-responsive col-12 p-0">
+                                                <table class="table table-hover table-bordered" id="EndorsementTbl">
+                                                   <thead>
+                                                      <tr>
+                                                         <th scope="col">Txn Sys Id</th>
+                                                         <th scope="col">Serial No</th>
+                                                         <th scope="col">Chassis Number</th>
+                                                         <th scope="col">Registration Number</th>
+                                                         <th scope="col">Model Number</th>
+                                                         <th scope="col">Participant Name</th>
+                                                         <th scope="col">Participant Value</th>
+                                                         <th scope="col">Gross</th>
+                                                         <th scope="col">Net</th>
+                                                         <th scope="col">Rate</th>
+                                                      </tr>
+                                                   </thead>
+                                                </table>
+                                             </div>
+                                             
+                                             <div id="EndorsementSec" class="form-row" style="display:none">
+                                                <div class="txnsysid">
+                                                   <h1 id="txnSysId"></h1>
+                                                </div>
+                                                <div class="col-sm-6" style="display:none">
+                                                   <input type="text" id="EndorsementCalcRowIndex" class="disable-input">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <label for="ddlEndorsementType" class="col-12">
+                                                   <span class="required">
+                                                   <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                   </span>Endorsement Type:
+                                                   </label>
+                                                   <div class="select">
+                                                      <select id="ddlEndorsementType" name="ddlEndorsementType" class="js-example-basic-single col-12"></select>
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <label for="ddlEndorsementReason" class="col-12">
+                                                   <span class="required">
+                                                   <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                   </span>Endorsement Reason:
+                                                   </label>
+                                                   <div class="select">
+                                                      <select id="ddlEndorsementReason" name="ddlEndorsementReason" class="js-example-basic-single col-12"></select>
+                                                   </div>
+                                                </div>
+                                                <div class="col-sm-6" style="display:none">
+                                                   <label for="EndorsementCertificateTxnSysID" class="col-12">
+                                                   <span class="required">
+                                                   <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                   </span>EndorsementCertificateTxnSysID:
+                                                   </label>
+                                                   <input type="text" id="EndorsementCertificateTxnSysID" class="form-control"  name="EndorsementCertificateTxnSysID">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <label for="txtEndorsementValue" class="col-12">
+                                                   <span class="required">
+                                                   <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                   </span>Endorsement Value:
+                                                   </label>
+                                                   <input type="text" id="txtEndorsementValue" class="form-control"  name="txtEndorsementValue">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <label for="comment">Remarks:</label>
+                                                   <textarea class="form-control" rows="1" id="txtRemarks" name="txtRemarks"></textarea>
+                                                </div>
+                                                <div class="EndorsementError col-12">
+                                                   <p id="greater" style="display:none" class="col-12"></p>
+                                                   <p id="less" style="display:none" class="col-12"></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <button type="button" id="BtnCalculation" class="btnsearch">Calculation
+                                                   <i class="fa fa-search" aria-hidden="true"></i>
+                                                   </button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <button type="button" id="BtnCalcSave" class="btnsearch">Save
+                                                   <i class="fa fa-search" aria-hidden="true"></i>
+                                                   </button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                   <button type="button" id="BtnEndorsementClear" class="btnsearch">New
+                                                   <i class="fa fa-plus" aria-hidden="true"></i>
+                                                   </button>
+                                                </div>
+                                                <div class="txnsysid">
+                                                   <h1 id="txnSysId">Updated Contribution</h1>
+                                                </div>
+                                                <div class="table-responsive col-12 p-0">
+                                                   <table class="table table-hover table-bordered" id="EndorsementCalcTbl">
+                                                      <thead>
+                                                         <tr>
+                                                            <th scope="col">Difference</th>
+                                                            <th scope="col">GrossContribution</th>
+                                                            <th scope="col">Net Contribution</th>
+                                                            <th scope="col">FED</th>
+                                                            <th scope="col">FIF</th>
+                                                            <th scope="col">Before PEV</th>
+                                                         </tr>
+                                                      </thead>
+                                                   </table>
+                                                </div>
+                                                <div class="txnsysid">
+                                                   <h1 id="txnSysId">Previous Contribution</h1>
+                                                </div>
+                                                <div class="table-responsive col-12 p-0">
+                                                   <table class="table table-hover table-bordered" id="EndorsementCalcTblPrevious">
+                                                      <thead>
+                                                         <tr>
+                                                            <th scope="col">Difference</th>
+                                                            <th scope="col">GrossContribution</th>
+                                                            <th scope="col">Net Contribution</th>
+                                                            <th scope="col">FED</th>
+                                                            <th scope="col">FIF</th>
+                                                            <th scope="col">Before PEV</th>
+                                                         </tr>
+                                                      </thead>
+                                                   </table>
+                                                </div>
+                                                <div class="txnsysid">
+                                                   <h1 id="txnSysId">Variance Contribution</h1>
+                                                </div>
+                                                <div class="table-responsive col-12 p-0">
+                                                   <table class="table table-hover table-bordered" id="EndorsementCalcTblVariance">
+                                                      <thead>
+                                                         <tr>
+                                                            <th scope="col">Difference</th>
+                                                            <th scope="col">GrossContribution</th>
+                                                            <th scope="col">Net Contribution</th>
+                                                            <th scope="col">FED</th>
+                                                            <th scope="col">FIF</th>
+                                                            <th scope="col">Before PEV</th>
+                                                         </tr>
+                                                      </thead>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-12 sec-heading">
+                              <h1>Certificate Header</h1>
+                           </div>
+                           <div class="col-sm-6" style="display:none">
+                              <input type="text" id="VechicleInsiranceRowIndex" class="disable-input">
+                           </div>
+                           <div class="col-sm-6" style="display:none;">
+                              <label for="txtCertificateCityCode" class="col-12">
+                              <span class="required">*</span>City Code:
+                              </label>
+                              <input type="text" class="form-control" name="txtCertificateCityCode" id="txtCertificateCityCode"/>
+                           </div>
+                           <div class="col-sm-6" style="display:none;">
+                              <label for="txtCertificateAreaCode" class="col-12">
+                              <span class="required">*</span>Area Code:
+                              </label>
+                              <input type="text" class="form-control" name="txtCertificateAreaCode" id="txtCertificateAreaCode"/>
+                           </div>
+                           <div class="col-sm-6" style="display:none">
+                              <label for="txtCertificateTxnSysID" class="col-12">
+                              <span class="required">*</span>Txn Sys ID:
+                              </label>
+                              <input type="text" class="form-control" name="txtCertificateTxnSysID" id="txtCertificateTxnSysID"/>
+                           </div>
+                           <div class="col-sm-12 sec-heading child-heading">
+                              <h1>Client Info 
+                                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                              </h1>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtParticipantName" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Participant Name:
+                              </label>
+                              <input type="text" id="txtParticipantName" class="form-control"  name="txtParticipantName">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtParticipantAddress" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Participant Address:
+                              </label>
+                              <input type="text" id="txtParticipantAddress" class="form-control"  name="txtParticipantAddress">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtEmail" class="col-12">
+                                 Email
+                              </label>
+                              <input type="text" id="txtEmail" class="form-control"  name="txtEmail">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlCityCode" class="col-12">
+                                 City:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlCityCode" name="ddlCityCode" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlAreaCode" class="col-12">
+                                 Area:
+                              </label>
+                                 <input type="text" id="ddlAreaCode" class="form-control"  name="ddlAreaCode">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtCnicNum" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>CNIC Number:
+                              </label>
+                              <input type="text" id="txtCnicNum" class="form-control"  name="txtCnicNum" data-inputmask="'mask': '99999-9999999-9'" placeholder="XXXXX-XXXXXXX-X"  name="cnic">
+                              <span id="error" style="display:none">Only 13 numbers are allowed</span>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtPersonalNum" class="col-12">
+                                 Personal Number
+                              </label>
+                              <input  type="text" id="txtPersonalNum" class="form-control"  name="txtPersonalNum"  maxlength="11">
+                              <span id="error" style="display:none">Only 13 numbers are allowed</span>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtOfficeNum" class="col-12">
+                                 Office Number
+                              </label>
+                              <input  type="number" id="txtOfficeNum" class="form-control"  name="txtOfficeNum">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtResidenceNum" class="col-12">
+                                 Residence Number
+                              </label>
+                              <input  type="number" id="txtResidenceNum" class="form-control"  name="txtResidenceNum">
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtBirthDate" class="col-12">
+                                 Date of Birth:
+                              </label>
+                              <input id="txtBirthDate" data-inputmask="'alias': 'date'" class="form-control" name="txtBirthDate"/>
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="ddlGender" class="col-12">
+                                 Gender:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlGender" name="ddlGender" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtPoDate" class="col-12">
+                                 PO Date:
+                              </label>
+                              <input type="text" id="txtPoDate" class="form-control"  name="txtPoDate" data-inputmask="'alias': 'date'">
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtPoNumber" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Po Number:
+                              </label>
+                              <input type="text" id="txtPoNumber" class="form-control"  name="txtPoNumber">
+                           </div>
+                           <div class="col-sm-12 sec-heading child-heading">
+                              <h1>Vehicle Info 
+                                 <i class="fa fa-car" aria-hidden="true"></i>
+                              </h1>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlVehicleName" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Vehicle:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlVehicleName" name="ddlVehicleName" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtVehicleModel" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Vehicle Model:
+                              </label>
+                              <input type="text" id="txtVehicleModel" class="form-control"  name="txtVehicleModel">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlVehicleType" class="col-12">
+                                 Vechicle Type:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlVehicleType" name="ddlVehicleType" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlTakafulType" class="col-12">
+                                 Takaful Type:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlTakafulType" name="ddlTakafulType" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlColorName" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Color:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlColorName" name="ddlColorName" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtRegistrationNumber" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Registration Number:
+                              </label>
+                              <input type="text" id="txtRegistrationNumber" class="form-control"  name="txtRegistrationNumber">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtEngineNumber" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Engine Number:
+                              </label>
+                              <input type="text" id="txtEngineNumber" class="form-control"  name="txtEngineNumber">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtChasisNumber" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Chassis Number:
+                              </label>
+                              <input type="text" id="txtChasisNumber" class="form-control"  name="txtChasisNumber">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtMileage" class="col-12">
+                                 Mileage
+                              </label>
+                              <input type="text" id="txtMileage" class="form-control"  name="txtMileage">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlVEODCode" class="col-12">
+                                 VEOD Code:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlVEODCode" name="ddlVEODCode" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4" style="display:none">
+                              <label for="txtUpdatedValue" class="col-12">
+                                 Updated Value
+                              </label>
+                              <input type="text" id="txtUpdatedValue" class="form-control"  name="txtUpdatedValue">
+                           </div>
+                           <div class="col-sm-4" style="display:none">
+                              <label for="txtPreviousValue" class="col-12">
+                              <span class="required">
+                              <i class="fa fa-asterisk" aria-hidden="true"></i>
+                              </span>Previous Value:
+                              </label>
+                              <input type="text" id="txtPreviousValue" class="form-control"  name="txtPreviousValue">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="comment">Remarks:</label>
+                              <input type="text" id="txtRegistratxtRemarkstionNumber" class="form-control"  name="txtRemarks">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtTenure" class="col-12">Tenure:
+                              </label>
+                              <input type="text" id="txtTenure" class="form-control"  name="txtTenure">
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlOpCerTypeCode" class="col-12">
+                                 Certificate Type Code:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlOpCerTypeCode" name="ddlOpCerTypeCode" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="ddlRatingFactor" class="col-12">
+                                 Rating Factor:
+                              </label>
+                              <div class="select">
+                                 <select id="ddlRatingFactor" name="ddlRatingFactor" class="js-example-basic-single col-12"></select>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <label for="txtVehicleValue" class="col-12">
+                                 Vehicle Value:
+                              </label>
+                              <input type="text" id="txtVehicleValue" class="form-control"  name="txtVehicleValue">
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtRate" class="col-12">
+                                 Rate:
+                              </label>
+                              <input type="text" id="txtRate" class="form-control"  name="txtRate">
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtContribution" class="col-12">
+                                 Contribution:
+                              </label>
+                              <input type="text" id="txtContribution" class="form-control"  name="txtContribution">
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtContractMaturityDate" class="col-12">
+                                 Contract Maturity Date:
+                              </label>
+                              <input type="text" id="txtContractMaturityDate" class="form-control ContractDate"  name="txtContractMaturityDate" data-inputmask="'alias': 'date'">
+                           </div>
+                           <div class="col-sm-3">
+                              <label for="txtDeductible" class="col-12">
+                                Deductible:
+                              </label>
+                              <input type="text" id="txtDeductible" class="form-control"  name="txtDeductible" >
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Page End -->
+      <!-- Scroll Top -->
+      <div id="topscroll">
+         <a href="#">
+         <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </a>
+      </div>
+      <!-- Scroll Top -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Scroll Up & Down -->
+      <script type="text/javascript" src="js/scrollbttn.js"></script>
+      <!-- Form Validation Plugin Js -->
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- Bootstrap Js -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Select2 Dropdown Js -->
+      <script type="text/javascript" src="js/select2.min.js"></script>
+      <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <!-- DataTable Js -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+      <script type="text/javascript" src="js/jquery.mask.js"></script>
+      <script type="text/javascript" src=js/inputmask.bundle.js>
+      </script>
+      <!-- Api Intergration in Select/Table and for edit in family section table  -->
+      <script type="text/javascript" src="js/endorsement.js"></script>
+       <!-- Menu Js -->
+      <script type="text/javascript" src="js/menu.js"></script>
+      <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/classie.js"></script>
+      <script type="text/javascript" src="js/sidebarEffects.js"></script>
+   </body>
+</html>

@@ -1,0 +1,36 @@
+
+http://localhost:4093/ddlTravel/createTravelPolicy/?_json=
+'{"CategoryCode":1,"PlanCode":1,"InsuredName":'Ahmer',"DOB":'2000-01-01',"Email":'ahmer.najam@hotmail.com',"MobileNumber":'03040005654',"DestinationCode":1,"TravelWithCode":1,"TravellingDate":'2019-01-01' ,"TenureCode":1,"ContributionCode":5000,"PaymentModeCode":1}'&_familyjson=''
+
+http://localhost:4093/ddlTravel/createTravelPolicy/?_json='{"CategoryCode":1,"PlanCode":1,"InsuredName":"Ahmer","DOB":"2000-01-01","Email":"ahmer.najam@hotmail.com","MobileNumber":"03040005654","DestinationCode":1,"TravelWithCode":1,"TravellingDate":"2019-01-01" ,"TenureCode":1,"ContributionCode":5000,"PaymentModeCode":1}'&_familyjson=""
+
+http://localhost:4093/ddlTravel/createTravelPolicy/?_json={"CategoryCode":1,"PlanCode":1,"InsuredName":"Ahmer","DOB":"2000-01-01","Email":"ahmer.najam@hotmail.com","MobileNumber":"03040005654","DestinationCode":1,"TravelWithCode":1,"TravellingDate":"2019-01-01"%20,"TenureCode":1,"ContributionCode":5000,"PaymentModeCode":1}&_familyjson=""
+
+
+//Local
+http://localhost:4093/ddlTravel/createTravelPolicy/?_json={"CategoryCode":1,"PlanCode":1,"InsuredName":"Ahmer","DOB":"2000-01-01","Email":"ahmer.najam@hotmail.com","MobileNumber":"03040005654","DestinationCode":1,"TravelWithCode":1,"TravellingDate":"2019-01-01"%20,"TenureCode":1,"ContributionCode":5000,"PaymentModeCode":1}&_familyjson=[{"FamilyName":"Omar","FamilyDob":"2000-01-01","FamilyRelationCode":1},{"FamilyName":"Amber","FamilyDob":"2010-01-01","FamilyRelationCode":2}]
+
+//UAT
+http://192.168.1.6/ddlApi/ddlTravel/createTravelPolicy/?_json={"CategoryCode":1,"PlanCode":1,"InsuredName":"Ahmer","DOB":"2000-01-01","Email":"ahmer.najam@hotmail.com","MobileNumber":"03040005654","DestinationCode":1,"TravelWithCode":1,"TravellingDate":"2019-01-01"%20,"TenureCode":1,"ContributionCode":5000,"PaymentModeCode":1}&_familyjson=[{"FamilyName":"Omar","FamilyDob":"2000-01-01","FamilyRelationCode":1},{"FamilyName":"Amber","FamilyDob":"2010-01-01","FamilyRelationCode":2}]
+
+
+http://192.168.1.6/ddlApi/ddlTravel/ValidateUserCredentials/?_userinfo={"UserId": "admin", "UserPassword":"admin123"}
+http://192.168.1.6/ddlApi/ddlTravel/ValidateUserCredentials/?_userinfo={"UserId": "admin", "UserPassword":"admin123"}
+http://192.168.1.6/ddlTravel/ValidateUserCredentials/?_userinfo={"UserId": "admin", "UserPassword":"admin123"}
+
+http://localhost:4093/ddlTravel/ValidateUserToken/?_userinfo={"UserId": "admin", "Token":"0cddabe5-eb0e-45f2-8fb8-bdaa6ced2291"}
+http://localhost:4093/ddlTravel/TokenExpiry/?_userinfo={"UserId": "admin", "Token":"0cddabe5-eb0e-45f2-8fb8-bdaa6ced2291"}
+
+http://192.168.1.6/ddlapi/ddlTravel/TokenExpiry/?_userinfo={"UserId": "admin", "Token":"0cddabe5-eb0e-45f2-8fb8-bdaa6ced2291"}
+http://192.168.1.6/crmapi/WelcomeCall/AddWelcomeCallStatus/?_WelcomeCallStatus={"TmsAssortedCode": "040000088748", "StatusCode":1, "Remarks":"This is test"}
+http://localhost:4094/WelcomeCall/AddWelcomeCallStatus/?_WelcomeCallStatus={"TmsAssortedCode": "040000088748", "StatusCode":1, "Remarks":"This is test"}
+
+http://localhost:4094/WelcomeCall/Getpendinglist
+
+http://localhost:4094/WelcomeCall/GetWelcomeCallStatusList
+http://localhost:4094/WelcomeCall/GetWelcomeCallStatusHistory
+http://192.168.1.6/crmapi/WelcomeCall/GetWelcomeCallStatusHistory/?_TmsAssortedCode=040000088748
+
+0cddabe5-eb0e-45f2-8fb8-bdaa6ced2291
+
+"INSERT INTO UserToken(\r\nUserID,Token)\r\nVALUES(\r\n@UserID,@Token)\r\n"
