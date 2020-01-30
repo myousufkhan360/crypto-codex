@@ -1,0 +1,56 @@
+<ul class="list-group my-list-group" style="margin-top: 10px;">
+  <li class="list-group-item">
+    <a
+      [routerLink]="'claim-reg' ? '/claim-home/claim-reg' : null"
+      routerLinkActive="is-active"
+      >Claim Registration</a
+    >
+  </li>
+  <li class="list-group-item">
+    <a
+      [routerLink]="
+        'motor-open-policy-header'
+          ? '/motor-uw-home/motor-open-policy-header'
+          : null
+      "
+      routerLinkActive="is-active"
+      >Open Policy</a
+    >
+  </li>
+  <li class="list-group-item">
+    <a
+      [routerLink]="
+        'motor-certificate-header'
+          ? '/motor-uw-home/motor-certificate-header'
+          : null
+      "
+      routerLinkActive="is-active"
+      >Certificate Header</a
+    >
+  </li>
+  <li class="list-group-item">
+    <a
+      [routerLink]="
+        'motor-risk-detail'
+          ? '/motor-uw-home/motor-risk-detail'
+          : null
+      "
+      routerLinkActive="is-active"
+      >Risk Detail</a
+    >
+  </li>
+  <li class="list-group-item">
+    <a
+      [routerLink]="'claim-vehicle' ? '/claim-home/claim-vehicle' : null"
+      routerLinkActive="is-active"
+      >Vehicle Details</a
+    >
+  </li>
+  <li class="list-group-item">
+    <a
+      [routerLink]="'claim-search' ? '/claim-home/claim-search' : null"
+      routerLinkActive="is-active"
+      >Claim Search</a
+    >
+  </li>
+</ul>

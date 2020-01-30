@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+/* @import "~@ng-select/ng-select/themes/default.theme.css"; */
+@import "~ngx-toastr/toastr";
+
+/* @import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"; */
+
+li.list-group-item {
+  border-color: #3b5999;
+  cursor: pointer;
+}
+
+.is-active {
+  cursor: default;
+  text-decoration: none;
+  color: gray;
+}
+
+.jumbotron {
+  padding-top: 0px;
+  background: #fff;
+}
+
+.form-control,
+.input-group-text {
+  border: 1px solid #0080ff;
+}
+
+table.table-hover tbody tr:hover {
+  cursor: pointer;
+}
+
+.bg-light {
+  background-color: #afd0f1 !important;
+}
+
+.validation-error {
+  font-size: 90%;
+  color: red;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.ng-select {
+  padding: 0px;
+  height: 100%;
+  border: 0; /* Added by me */
+  border: 1px solid #0080ff;
+}
+
+.card-header {
+  background-color: #afd0f1;
+  color: black;
+}
+
+.card-body {
+  border-color: #afd0f1;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.btn-outline-warning {
+  color: rgba(0, 0, 0, 0.9) !important;
+  border-color: #afd0f1 !important;
+}
+
+.btn-outline-warning:hover {
+  color: black !important;
+  background-color: #afd0f1 !important;
+}
+
+/* Scrollable Div */
+.scroll-div {
+  overflow: scroll;
+  height: 400px;
+}
+/* Scrollable Div */
+/* Table Fixed Header */
+.tableFixHead {
+  overflow-y: auto;
+  height: 400px;
+  width: 900px;
+}
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 80%;
+}
+th,
+td {
+  padding: 8px 16px;
+}
+th {
+  background: #eee;
+}
+
+/* Table Fixed Header */

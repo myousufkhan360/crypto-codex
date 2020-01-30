@@ -1,0 +1,545 @@
+<app-motor-claim-topmenu></app-motor-claim-topmenu>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+      <app-motor-claim-menu></app-motor-claim-menu>
+    </div>
+    <div class="col-sm-10">
+      <!-- Form Start -->
+      <div class="col-sm scroll-div">
+        <div class="container" style="display: inline-block">
+          <h3 class="text-center">Motor Certificate Header</h3>
+          <form
+            #form="ngForm"
+            name="form"
+            autocomplete="off"
+            *ngIf="service.formData"
+            (submit)="onSubmit(form)"
+            novalidate
+          >
+            <div class="row">
+              <input
+                type="hidden"
+                name="BranchCode"
+                #BranchCode="ngModel"
+                [(ngModel)]="service.formData.BranchCode"
+              />
+              <input
+                type="hidden"
+                name="DocTypeCode"
+                #DocTypeCode="ngModel"
+                [(ngModel)]="service.formData.DocTypeCode"
+              />
+              <input
+                type="hidden"
+                name="DocNo"
+                #DocNo="ngModel"
+                [(ngModel)]="service.formData.DocNo"
+              />
+              <input
+                type="hidden"
+                name="DocYear"
+                #DocYear="ngModel"
+                [(ngModel)]="service.formData.DocYear"
+              />
+
+              <input
+                type="hidden"
+                name="DocMonth"
+                #DocMonth="ngModel"
+                [(ngModel)]="service.formData.DocMonth"
+              />
+              <input
+                type="hidden"
+                name="CancelBy"
+                #CancelBy="ngModel"
+                [(ngModel)]="service.formData.CancelBy"
+              />
+              <input
+                type="hidden"
+                name="CancelDate"
+                #CancelDate="ngModel"
+                [(ngModel)]="service.formData.CancelDate"
+              />
+              <input
+                type="hidden"
+                name="IsCancelled"
+                #IsCancelled="ngModel"
+                [(ngModel)]="service.formData.IsCancelled"
+              />
+
+              <input
+                type="hidden"
+                name="ClassCode"
+                #ClassCode="ngModel"
+                [(ngModel)]="service.formData.ClassCode"
+              />
+              <input
+                type="hidden"
+                name="GenerateAgainst"
+                #GenerateAgainst="ngModel"
+                [(ngModel)]="service.formData.GenerateAgainst"
+              />
+              <input
+                type="hidden"
+                name="TmsAssortedCode"
+                #TmsAssortedCode="ngModel"
+                [(ngModel)]="service.formData.TmsAssortedCode"
+              />
+              <input
+                type="hidden"
+                name="TmsGenerateAgainst"
+                #TmsGenerateAgainst="ngModel"
+                [(ngModel)]="service.formData.TmsGenerateAgainst"
+              />
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Assorted Code</label>
+                  <input
+                    name="AssortedCode"
+                    #AssortedCode="ngModel"
+                    [(ngModel)]="service.formData.AssortedCode"
+                    class="form-control"
+                    readonly
+                    autofocus
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Policy String</label>
+                  <input
+                    name="DocString"
+                    #DocString="ngModel"
+                    [(ngModel)]="service.formData.DocString"
+                    class="form-control"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Entered By</label>
+                  <input
+                    name="CreatedBy"
+                    #CreatedBy="ngModel"
+                    [(ngModel)]="service.formData.CreatedBy"
+                    class="form-control"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Entry Date</label>
+                  <input
+                    name="CreatedDate"
+                    #CreatedDate="ngModel"
+                    [(ngModel)]="service.formData.CreatedDate"
+                    class="form-control"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Post By</label>
+                  <input
+                    name="PostBy"
+                    #PostBy="ngModel"
+                    [(ngModel)]="service.formData.PostBy"
+                    class="form-control"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Post Date</label>
+                  <input
+                    name="PostDate"
+                    #PostDate="ngModel"
+                    [(ngModel)]="service.formData.PostDate"
+                    class="form-control"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Issue Date</label>
+                  <input
+                    name="IssueDate"
+                    #IssueDate="ngModel"
+                    [(ngModel)]="service.formData.IssueDate"
+                    class="form-control"
+                    readonly
+                  />
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Effective Date</label>
+                  <input
+                    type="text"
+                    placeholder="dd/MM/yyyy"
+                    class="form-control"
+                    bsDatepicker
+                    [bsConfig]="{
+                      isAnimated: true,
+                      dateInputFormat: 'DD/MM/YYYY'
+                    }"
+                    name="EffectiveDate"
+                    #EffectiveDate="ngModel"
+                    [(ngModel)]="service.formData.EffectiveDate"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Expiry Date</label>
+                  <input
+                    type="text"
+                    placeholder="dd/MM/yyyy"
+                    class="form-control"
+                    bsDatepicker
+                    [bsConfig]="{
+                      isAnimated: true,
+                      dateInputFormat: 'DD/MM/YYYY'
+                    }"
+                    name="ExpiryDate"
+                    #ExpiryDate="ngModel"
+                    [(ngModel)]="service.formData.ExpiryDate"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Client</label>
+                  <ng-select
+                    name="ClientCode"
+                    #ClientCode="ngModel"
+                    [(ngModel)]="service.formData.ClientCode"
+                    [items]="clientList"
+                    bindValue="ClientCode"
+                    bindLabel="ClientName"
+                    class="form-control"
+                    (change)="onChangeOfClient($event)"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      ClientCode.touched &&
+                      (service.formData.ClientCode == 0 ||
+                        service.formData.ClientCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Client
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Open Policy</label>
+                  <ng-select
+                    name="OpenPolAssortedCode"
+                    #OpenPolAssortedCode="ngModel"
+                    [(ngModel)]="service.formData.OpenPolAssortedCode"
+                    [items]="openPolAssortedCodeList"
+                    bindValue="OpenPolAssortedCode"
+                    bindLabel="OpenPolString"
+                    class="form-control"
+                    (change)="onChangeOfOpenPol($event)"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                    OpenPolAssortedCode.touched &&
+                      (service.formData.OpenPolAssortedCode == 0 ||
+                        service.formData.OpenPolAssortedCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Open Policy
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Open Policy</label>
+                  <ng-select
+                    name="OpenPolAssortedCode"
+                    #OpenPolAssortedCode="ngModel"
+                    [(ngModel)]="service.formData.OpenPolAssortedCode"
+                    [items]="OpenPolAssortedCodeList"
+                    bindValue="OpenPolAssortedCode"
+                    bindLabel="OpenPolString"
+                    class="form-control"
+                    (change)="onChangeOfOpenPol($event)"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                    OpenPolAssortedCode.touched &&
+                      (service.formData.OpenPolAssortedCode == 0 ||
+                        service.formData.OpenPolAssortedCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Open Policy
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Product</label>
+                  <ng-select
+                    name="ProductCode"
+                    #ProductCode="ngModel"
+                    [(ngModel)]="service.formData.ProductCode"
+                    [items]="productList"
+                    bindValue="ProductCode"
+                    bindLabel="ProductName"
+                    class="form-control"
+                    (change)="onChange($event)"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      ProductCode.touched &&
+                      (service.formData.ProductCode == 0 ||
+                        service.formData.ProductCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Product
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Agency</label>
+                  <ng-select
+                    name="AgencyCode"
+                    #AgencyCode="ngModel"
+                    [(ngModel)]="service.formData.AgencyCode"
+                    [items]="agencyList"
+                    bindValue="AgencyCode"
+                    bindLabel="AgencyName"
+                    class="form-control"
+                    disabled
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      AgencyCode.touched &&
+                      (service.formData.AgencyCode == 0 ||
+                        service.formData.AgencyCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Agency
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Commission %</label>
+                  <input
+                    name="CommisionRate"
+                    #CommisionRate="ngModel"
+                    [(ngModel)]="service.formData.CommisionRate"
+                    class="form-control"
+                    [class.is-invalid]="
+                      !isValid && service.formData.CommisionRate == null
+                    "
+                    required
+                    disabled
+                  />
+                  <div
+                    *ngIf="
+                    CommisionRate.touched && service.formData.CommisionRate == null
+                    "
+                    class="validation-error"
+                  >
+                    Please input Commission %
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Takaful Type</label>
+                  <ng-select
+                    name="TakafulTypeCode"
+                    #TakafulTypeCode="ngModel"
+                    [(ngModel)]="service.formData.TakafulTypeCode"
+                    [items]="takafulTypeList"
+                    bindValue="TakafulTypeCode"
+                    bindLabel="TakafulTypeName"
+                    class="form-control"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      TakafulTypeCode.touched &&
+                      (service.formData.TakafulTypeCode == 0 ||
+                        service.formData.TakafulTypeCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Takaful Type
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Policy Type</label>
+                  <ng-select
+                    name="PolicyTypeCode"
+                    #PolicyTypeCode="ngModel"
+                    [(ngModel)]="service.formData.PolicyTypeCode"
+                    [items]="policyTypeList"
+                    bindValue="PolicyTypeCode"
+                    bindLabel="PolicyTypeName"
+                    class="form-control"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      PolicyTypeCode.touched &&
+                      (service.formData.PolicyTypeCode == 0 ||
+                        service.formData.PolicyTypeCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Policy Type
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Certificate</label>
+                  <ng-select
+                    name="CertificateCode"
+                    #CertificateCode="ngModel"
+                    [(ngModel)]="service.formData.CertificateCode"
+                    [items]="insCertTypeList"
+                    bindValue="InsCertTypeCode"
+                    bindLabel="InsCertTypeName"
+                    class="form-control"
+                    disabled
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      CertificateCode.touched &&
+                      (service.formData.CertificateCode == 0 ||
+                        service.formData.CertificateCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Certificate
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Is Renewal</label>
+                  <ng-select
+                    name="IsRenewCode"
+                    #IsRenewCode="ngModel"
+                    [(ngModel)]="service.formData.IsRenewCode"
+                    [items]="isRenewalList"
+                    bindValue="IsRenewCode"
+                    bindLabel="IsRenewName"
+                    class="form-control"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      CertificateCode.touched &&
+                      (service.formData.IsRenewCode == 0 ||
+                        service.formData.IsRenewCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Is Renewal
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Calc Type</label>
+                  <ng-select
+                    name="CalcTypeCode"
+                    #CalcTypeCode="ngModel"
+                    [(ngModel)]="service.formData.CalcTypeCode"
+                    [items]="calcTypeList"
+                    bindValue="CalcTypeCode"
+                    bindLabel="CalcTypeName"
+                    class="form-control"
+                  ></ng-select>
+                  <div
+                    *ngIf="
+                      CertificateCode.touched &&
+                      (service.formData.CalcTypeCode == 0 ||
+                        service.formData.CalcTypeCode == '')
+                    "
+                    class="validation-error"
+                  >
+                    Please select Calculation Type
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <label>Remarks</label>
+                  <input
+                    name="Remarks"
+                    #Remarks="ngModel"
+                    [(ngModel)]="service.formData.Remarks"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <button
+                  id="submit"
+                  type="submit"
+                  class="btn btn-outline-warning ml-3"
+                  [disabled]="form.invalid || !isValid"
+                  [hidden]="this.IsFormSubmitted == true"
+                >
+                  <i class="fa fa-database" aria-hidden="true"></i> Submit
+                </button>
+                <button
+                  id="btnNew"
+                  type="button"
+                  class="btn btn-outline-warning ml-1"
+                  (click)="onBtnNew()"
+                  [hidden]="this.IsFormSubmitted == true"
+                >
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i> New
+                </button>
+                <button
+                  id="btnProceed"
+                  type="button"
+                  class="btn btn-outline-warning ml-1 fa-arrow-circle-o-right"
+                  (click)="onBtnProceed()"
+                  [disabled]="form.invalid || !isValid"
+                  [hidden]="this.IsFormSubmitted == true"
+                >
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i> Proceed
+                </button>
+                
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Form End -->
+    </div>
+  </div>
+</div>

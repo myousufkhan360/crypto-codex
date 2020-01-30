@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-md-8">
+    <h1 class="display-4" style="margin-left: 15px">
+      TmsPlus - Motor Underwriting
+    </h1>
+  </div>
+  <div class="col-md-2" style="display: inline-block;">
+    <h5 class="float-right m-4">Welcome {{ this.tokenInfo.unique_name }}</h5>
+  </div>
+  <div class="col-md-2" style="display: inline-block;">
+    <a
+      class="btn btn-outline-warning  float-left m-3"
+      style="width:auto"
+      (click)="onLogOut()"
+    >
+      <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a
+    >
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/motor-uw-home">Motor Underwriting</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/motor-uw-home">
+          <i class="fa fa-home" aria-hidden="true"></i> Home
+          <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="
+            'motor-open-policy-header'
+              ? '/motor-uw-home/motor-open-policy-header'
+              : null
+          "
+          routerLinkActive="is-active"
+          >Open Policy</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="
+            'motor-certificate-header'
+              ? '/motor-uw-home/motor-certificate-header'
+              : null
+          "
+          routerLinkActive="is-active"
+          >Certificate Header</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="
+            'motor-risk-detail'
+              ? '/motor-uw-home/motor-risk-detail'
+              : null
+          "
+          routerLinkActive="is-active"
+          >Risk Detail</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+          >Analysis</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

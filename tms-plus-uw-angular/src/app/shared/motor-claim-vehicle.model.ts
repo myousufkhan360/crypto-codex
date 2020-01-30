@@ -1,0 +1,32 @@
+export class MotorClaimVehicle {
+  AssortedCode: string;
+  PolicyVehicleCode: string;
+  PolicyString: string;
+  DocumentName: string;
+  TakafulType: string;
+  PeriodFrom: string;
+  PeriodToDate: string;
+  PolicyTenure: number;
+  PolicyTypeDesc: string;
+  PolicyNo: string;
+  RvNo: string;
+  VehicleKey: string;
+  VehicleName: string;
+  RegNo: string;
+  EngNo: string;
+  ChassisNo: string;
+  ColorName: string;
+  SumCovered: number;
+  GrossCont: number;
+  ClientCode: string;
+  ClientName: string;
+  AgencyCode: string;
+  AgencyName: string;
+  ParticipantName: string;
+  ParticipantAddress: string;
+  BranchCode: string;
+  ClassCode: string;
+  PolicyTypeCode: string;
+  TakafulTypeCode: string;
+  ClaimFlag2: string;
+}
